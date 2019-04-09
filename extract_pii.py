@@ -11,7 +11,7 @@ from helpers import get_web_driver
 
 def print_info(login, password):
 
-    webdriver = get_web_driver(headless=False)
+    webdriver = get_web_driver(headless=True)
 
     webdriver.get('https://mail.yahoo.com')
     webdriver.find_element_by_xpath('//a[@class="fuji-button-link fuji-button-text fuji-button-inverted"]').click()
